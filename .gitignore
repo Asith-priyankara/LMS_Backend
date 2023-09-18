@@ -1,3 +1,2 @@
 node_modules/
-packages.json
-packages-lock.json
+/config/.env

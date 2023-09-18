@@ -1,1 +1,19 @@
 PORT = {PORT number to run the server}
+
+ORIGIN = {what port numbers be permited to access backend}
+
+NODE_ENV = development
+
+DB_URL = 'url of the database '
+
+
+# cloudinary for store images
+CLOUD_NAME = cloud name
+
+CLOUD_API_KEY = cloud api key
+
+CLOUD_SECURITY_KEY = cloud api secret key
+
+
+# redis for caching
+REDIS_URL = redis url

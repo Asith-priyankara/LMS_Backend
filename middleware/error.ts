@@ -1,5 +1,6 @@
 import ErrorHandler from "../utils/ErrorHandler";
 import { Request, Response, NextFunction } from "express";
+require("dotenv").config({ path: "./config/.env" });
 
 export const ErrorMiddleware = (
   err: any,

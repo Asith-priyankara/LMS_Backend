@@ -10,4 +10,4 @@ const redisClient = () => {
 
 };
 
-export default redisClient;
+export const redis = new Redis(redisClient());

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activation Email</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+        min-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #444444;
+      }
+      a {
+        color: #444444;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.25;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      table td {
+        vertical-align: top;
+      }
+
+      /* Layout */
+      .email-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .email-header {
+        background-color: #0070f3;
+        padding: 25px 0;
+        text-align: center;
+        color: #ffffff;
+      }
+      .email-body {
+        background-color: #ffffff;
+        padding: 25px;
+      }
+      .email-footer {
+        background-color: #a4aeba;
+        padding: 25px 0;
+      }
+
+      /* Buttons */
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #0070f3;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="email-wrapper">
+      <div class="email-header">
+        <h1>Welcome to ELearning</h1>
+      </div>
+      <div class="email-body">
+        <p>Hi <%= user.name %>,</p>
+        <p>
+          Thanks for registering with ELearning. To activate your account,
+          please use the following activation code:
+        </p>
+        <h2><%= activationCode %></h2>
+        <p>
+          Please enter this code on the activation page within the next 10
+          minutes.
+        </p>
+        <p>If you did not register with ELearning, please ignore this email.</p>
+        <p>Thanks,</p>
+      </div>
+      <div class="email-footer">
+        <p>If you have any questions, please don't hesitate to contact us</p>
+      </div>
+    </div>
+  </body>
+</html>
